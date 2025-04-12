@@ -1,24 +1,24 @@
 SELECT 
-  cuentas.c1 as periodo,
-  cuentas.c3 as sucursal,
-  SUM(cuentas.c6) AS saldo
+  cuentas.PERIODO as periodo,
+  cuentas.SUCURSAL as sucursal,
+  SUM(cuentas.SALDO) AS saldo
 FROM 
-  Exercise1TableCuentas AS cuentas
+  table_cuentas AS cuentas
 
 JOIN 
-  Exercise1Table2TableProductos AS products
-  ON cuentas.c5 = products.c2
+  table_productos AS products
+  ON cuentas.PRODUCTO = products.PRODUCTO
 
 WHERE 
-  cuentas.c1 = '201903'
+  cuentas.PERIODO = '201903'
 AND 
-  products.c3 = 'VIGENTE'
+  products.ESTADO = 'VIGENTE'
 GROUP BY 
-  cuentas.c1,
-  cuentas.c3
+  cuentas.PERIODO,
+  cuentas.SUCURSAL
   
 HAVING
-  SUM(cuentas.c6) > 10000 
+  SUM(cuentas.SALDO) > 10000 
 
 ORDER BY
-  SUM(cuentas.c6) ASC;
+  SUM(cuentas.SALDO) ASC;
