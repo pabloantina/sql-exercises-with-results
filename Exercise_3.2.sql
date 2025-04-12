@@ -1,4 +1,4 @@
-with examenes_totales AS (
+WITH examenes_totales AS (
 SELECT
    fecha_examen,
    legajo,
