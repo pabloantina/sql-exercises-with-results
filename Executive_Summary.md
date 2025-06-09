@@ -6,7 +6,7 @@
 Este proyecto tiene como objetivo principal realizar un análisis del catálogo de contenido de peiculas y series de Netflix. A través de la manipulación y visualización de datos, buscamos identificar patrones acerca de la duración de películas 
 y de la cantidad de temporadas que tienen las series-tv shows, también evaluamos las categorias a las que pertenecen las peliculas y series y realizamos un análsis del contenido que se encuentra en la plataforma a partir de su año de lanzamiento.
 
-
+[modelo de datos en estrella](sql/modelo_estrella_estandarizado.sql).
 ## Componentes Clave del Repositorio
 
 Nuestro repositorio de GitHub se estructura para ofrecer una visión completa del proceso de análisis de datos:
